@@ -6,12 +6,19 @@ my nvim setup.
 We don't want to use plugin managers so we don't need an internet connection and we get the knowledge of understanding what is happening
 In this repo, I'll setup git submodules but you can do it manually as well.
 
+## Highlights - Treesitter
+This seems an obvious choice, it is again a bit of a default as I'm not really aware of alternatives but that just works.
+Still, I had a bit to work things out as TSUpdate won't work on the workstation. So I had to build the parser "manually".
+
 ## nvim-jdtls
 I tried lspconfig and the builtin lsp from nvim 0.10 but both fail a bit short compare to nvim-jdtls.
 If/When I use nvim 0.11, I'll give another try to the builtin as it seems to have been improved.
 
-## Completion
-I'm using Blink.cmp. I've tried nvim.cmp but it was a bit too slow. I still need to properly get my hands on blink but it seems to be a better alternative
+## Completion - Blink.cmp
+I'm using Blink.cmp. I've tried nvim.cmp but it was a bit too slow. I still need to properly get my hands on blink but it seems to be a better alternative.
+Improvements:
+- use the rust implementation -> download the prebuilt and set it up
+- add the colorful-menu so treesitter can be used
 
 ## Telescope
 I went a bit on Default there but I'll have a look at alternatives. Still a good idea to test things out.
@@ -25,6 +32,10 @@ I've been so use to move by camelCase that it was a must have for me. I'll have 
 It felt like it improved the jdtls for some reasons
 
 # Things to improve
+## Code actions
+I've already setup telescope as default for the select-ui. I want to add the code action preview plugin as well:
+https://github.com/aznhe21/actions-preview.nvim/tree/master
+
 ## lsp errors
 For whatever reason, I don't get the errors I used to have at the beginning, like Symbol not found or that kind of stuff.
 I need to investigate this issue as I tend to
