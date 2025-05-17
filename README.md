@@ -1,6 +1,15 @@
 # nvim
 my nvim setup.
 
+# Tasks list
+- [] push the current setup in here
+- [] setup colorful-menu for blink.cmp: (colorful-menu)[https://github.com/xzbdmw/colorful-menu.nvim]
+- [] setup (lsp_signature)[https://github.com/ray-x/lsp_signature.nvim]
+- [] setup extended capabilities for the jdtls server through nvim.jdtls
+- [] setup codeLens and figure out what it does exactly
+- [] setup surround support with (nvim-surround)[https://github.com/kylechui/nvim-surround]
+- [] check more stuff from (awesome-neovim)[https://github.com/rockerBOO/awesome-neovim]
+
 # Decisions
 ## No plugin manager
 We don't want to use plugin managers so we don't need an internet connection and we get the knowledge of understanding what is happening
@@ -29,7 +38,7 @@ Either there is something I should do to enhance or alternatives are better for 
 I've been so use to move by camelCase that it was a must have for me. I'll have to find a way to move to the end of "vim words" as it is quite usefull in a lot of situations (deletion, copy, etc.).
 
 ## ufo
-It felt like it improved the jdtls for some reasons
+It felt like it improved the jdtls for some reasons. It works quite well out of the box but I still need to setup the keymaps so it does what I want
 
 # Things to improve
 ## Code actions
@@ -38,14 +47,17 @@ https://github.com/aznhe21/actions-preview.nvim/tree/master
 
 ## lsp errors
 For whatever reason, I don't get the errors I used to have at the beginning, like Symbol not found or that kind of stuff.
-I need to investigate this issue as I tend to
+I need to investigate this issue as I tend to.
+Current status: They work for java 8 projects but not for Java 17. the jdtls logs shows that it doesn't find any errors in the file.
+It would seems more like there is some parsing issue going on. Probably better to open an issue ticket on the jdtls repository as the neovim setup seems properly done.
 
 ## Organize imports
 It used to be a big issue, but actually, I can say to jdt.ls what imports to use for instance, use assertj for assertThat, or use junit5 and not junit4.
 I'll have a lot to setup so that it doesn't screw up but that seems to be the path
 
 ## Rearrange files
-That's a topic that I still need to get my hands on
+That's a topic that I still need to get my hands on.
+There is a built in vim.lsp.buf.format that seems to already be doing some stuff. But I don't think it moves the methods.
 
 ## Java debug
 I've seen the stuff to set it up in nvim.jdtls but I haven't found the time to work on it either. If needs be I can use either vscode or intellij for the time being.
