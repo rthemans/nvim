@@ -4,7 +4,6 @@ require("themans.remap")
 require("themans.telescope")
 require("themans.treesitter")
 require("themans.blink")
-require("themans.lsp.config")
 require("themans.oil")
 require("themans.tree")
 require("themans.colorizer")
@@ -19,9 +18,7 @@ require("hardtime").setup()
 -- themes
 require("themans.theme")
 require("themans.tokyonight")
-require("themans.vague")
 require("themans.nightfox")
-require("themans.flexoki")
 
 vim.cmd.colorscheme "kanso-pearl"
 

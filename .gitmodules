@@ -1,0 +1,75 @@
+[submodule "pack/utils/start/telescope.nvim"]
+	path = pack/utils/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim
+[submodule "pack/utils/start/nvim-jdtls"]
+	path = pack/utils/start/nvim-jdtls
+	url = https://github.com/mfussenegger/nvim-jdtls
+[submodule "pack/utils/start/nvim-tree.lua"]
+	path = pack/utils/start/nvim-tree.lua
+	url = https://github.com/nvim-tree/nvim-tree.lua
+[submodule "pack/utils/start/plenary.nvim"]
+	path = pack/utils/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim
+[submodule "pack/utils/start/telescope-ui-select.nvim"]
+	path = pack/utils/start/telescope-ui-select.nvim
+	url = https://github.com/nvim-telescope/telescope-ui-select.nvim
+[submodule "pack/utils/start/nvim-treesitter"]
+	path = pack/utils/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "pack/utils/start/nvim-treesitter-context"]
+	path = pack/utils/start/nvim-treesitter-context
+	url = https://github.com/nvim-treesitter/nvim-treesitter-context
+[submodule "pack/utils/start/nvim-treesitter-textobjects"]
+	path = pack/utils/start/nvim-treesitter-textobjects
+	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+[submodule "pack/utils/start/nvim-treesitter-refactor"]
+	path = pack/utils/start/nvim-treesitter-refactor
+	url = https://github.com/nvim-treesitter/nvim-treesitter-refactor
+[submodule "pack/utils/start/blink.cmp"]
+	path = pack/utils/start/blink.cmp
+	url = https://github.com/Saghen/blink.cmp
+[submodule "pack/utils/start/colorful-menu.nvim"]
+	path = pack/utils/start/colorful-menu.nvim
+	url = https://github.com/xzbdmw/colorful-menu.nvim
+[submodule "pack/utils/start/nvim-spider"]
+	path = pack/utils/start/nvim-spider
+	url = https://github.com/chrisgrieser/nvim-spider
+[submodule "pack/utils/start/oil.nvim"]
+	path = pack/utils/start/oil.nvim
+	url = https://github.com/stevearc/oil.nvim
+[submodule "pack/utils/start/nvim-colorizer.lua"]
+	path = pack/utils/start/nvim-colorizer.lua
+	url = https://github.com/norcalli/nvim-colorizer.lua
+[submodule "pack/utils/start/nvim-ufo"]
+	path = pack/utils/start/nvim-ufo
+	url = https://github.com/kevinhwang91/nvim-ufo
+[submodule "pack/utils/start/promise-async"]
+	path = pack/utils/start/promise-async
+	url = https://github.com/kevinhwang91/promise-async
+[submodule "pack/utils/start/lualine.nvim"]
+	path = pack/utils/start/lualine.nvim
+	url = https://github.com/nvim-lualine/lualine.nvim
+[submodule "pack/utils/start/dashboard-nvim"]
+	path = pack/utils/start/dashboard-nvim
+	url = https://github.com/nvimdev/dashboard-nvim
+[submodule "pack/utils/start/header.nvim"]
+	path = pack/utils/start/header.nvim
+	url = https://github.com/attilarepka/header.nvim
+[submodule "pack/utils/start/hardtime.nvim"]
+	path = pack/utils/start/hardtime.nvim
+	url = https://github.com/m4xshen/hardtime.nvim
+[submodule "pack/utils/start/nvim"]
+	path = pack/utils/start/nvim
+	url = https://github.com/catppuccin/nvim
+[submodule "pack/utils/start/tokyonight.nvim"]
+	path = pack/utils/start/tokyonight.nvim
+	url = https://github.com/folke/tokyonight.nvim
+[submodule "pack/utils/start/nightfox.nvim"]
+	path = pack/utils/start/nightfox.nvim
+	url = https://github.com/EdenEast/nightfox.nvim
+[submodule "pack/utils/start/flexoki-neovim"]
+	path = pack/utils/start/flexoki-neovim
+	url = https://github.com/kepano/flexoki-neovim
+[submodule "pack/utils/start/kanso.nvim"]
+	path = pack/utils/start/kanso.nvim
+	url = https://github.com/webhooked/kanso.nvim

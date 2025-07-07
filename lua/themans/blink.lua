@@ -23,10 +23,6 @@ require("blink.cmp").setup({
         ["<tab>"] = { "select_and_accept" , "fallback"},
     },
     fuzzy = {
-        implementation = "prefer_rust_with_warning", 
-        prebuilt_binaries = {
-            download = false,
-            ignore_version_mismatch = true,
-        }
+        implementation = "lua", 
     },
 })
