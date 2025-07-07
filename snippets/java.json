@@ -1,0 +1,101 @@
+{
+    "test" : {
+        "prefix" : "test",
+        "body" : [
+            "@Test",
+            "void ${1:test}() {",
+            "\t$0",
+            "}"
+        ],
+        "description" : "Create test"
+    },
+
+    "assert that" : {
+        "prefix" : "ast",
+        "body" : [ "assertThat($1).$0"],
+        "description" : "simple assert That"
+    },
+
+    "assert that equals" : {
+        "prefix" : "ase",
+        "body" : [ "assertThat($1).isEqualTo($2);", "$0"],
+        "description" : "assert that x is equal to y"
+    },
+
+    "mockito class" : {
+        "prefix" : "junit_mockito_class",
+        "body" : [
+            "import org.junit.jupiter.api.Test;",
+            "import org.junit.jupiter.api.extension.ExtendWith;",
+            "import org.mockito.junit.jupiter.MockitoExtension;",
+            "",
+            "@ExtendWith(MockitoExtension.class)"
+        ]
+    },
+
+    "buyway_head" : {
+        "prefix" : "buyway_head",
+        "body" : ["/* Copyright $CURRENT_YEAR Buy Way Personal Finance */"],
+        "description" : "The buyway head for files"
+    },
+
+    "column annotation" : {
+        "prefix" : "col_annotation",
+        "body" : [
+            "@Column(name = \"$1\")",
+            "private $2 $0;"
+        ],
+        "description" : "my column annotation"
+    },
+
+    "mapping mapstruct" : {
+        "prefix" : "mapping_mapstruct",
+        "body" : ["@Mapping(target = \"$1\", source = \"$2\")"],
+        "description" : "mappings for mapstruct"
+    },
+
+    "entity class" : {
+        "prefix" : "entity_class",
+        "body" : [
+            "import jakarta.persistence.Column",
+            "import jakarta.persistence.Entity",
+            "import jakarta.persistence.GeneratedValue",
+            "import jakarta.persistence.GenerationType",
+            "import jakarta.persistence.Id",
+            "import jakarta.persistence.SequenceGenerator",
+            "import jakarta.persistence.Table",
+            "",
+            "import java.time.LocalDateTime",
+            "",
+            "import org.hibernate.annotations.CreationTimestamp",
+            "import org.hibernate.annotations.UpdateTimestamp",
+            "",
+            "import lombok.Data",
+            "import lombok.EqualsAndHashCode",
+            "import lombok.NoArgsConstructor",
+            "",
+            "@Entity",
+            "@Table( name = \"$1\" )",
+            "@NoArgsConstructor",
+            "@Data",
+            "@EqualsAndHashCode(callSuper = false)",
+            "public class $0 {",
+                "",
+                "    @Id",
+                "    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = \"$1$2\")",
+                "    @SequenceGenerator(sequenceName = \"$1$3\", name = \"$1$2\", allocationSize = 1)",
+                "    @Column(name = \"ID\")",
+                "    private long id;",
+                "    ",
+                "    @CreationTimestamp",
+                "    @Column(name = \"CREATED_AT\")",
+                "    private LocalDateTime createdAt;",
+                "",
+                "    @UpdateTimestamp",
+                "    @Column(name = \"MODIFIED_AT\")",
+                "    private LocalDateTime modifiedAt;",
+                "}"
+        ]
+    }
+}
+
