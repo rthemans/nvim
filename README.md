@@ -2,13 +2,13 @@
 my nvim setup.
 
 # Tasks list
-- [] push the current setup in here
-- [] setup colorful-menu for blink.cmp: (colorful-menu)[https://github.com/xzbdmw/colorful-menu.nvim]
-- [] setup (lsp_signature)[https://github.com/ray-x/lsp_signature.nvim]
-- [] setup extended capabilities for the jdtls server through nvim.jdtls
-- [] setup codeLens and figure out what it does exactly
-- [] setup surround support with (nvim-surround)[https://github.com/kylechui/nvim-surround]
-- [] check more stuff from (awesome-neovim)[https://github.com/rockerBOO/awesome-neovim]
+- [x] push the current setup in here
+- [x] setup colorful-menu for blink.cmp: (colorful-menu)[https://github.com/xzbdmw/colorful-menu.nvim]
+- [x] setup (lsp_signature)[https://github.com/ray-x/lsp_signature.nvim]
+- [ ] setup extended capabilities for the jdtls server through nvim.jdtls
+- [ ] setup codeLens and figure out what it does exactly
+- [ ] setup surround support with (nvim-surround)[https://github.com/kylechui/nvim-surround]
+- [ ] check more stuff from (awesome-neovim)[https://github.com/rockerBOO/awesome-neovim]
 
 # Decisions
 ## No plugin manager
@@ -46,14 +46,15 @@ I've already setup telescope as default for the select-ui. I want to add the cod
 https://github.com/aznhe21/actions-preview.nvim/tree/master
 
 ## lsp errors
-For whatever reason, I don't get the errors I used to have at the beginning, like Symbol not found or that kind of stuff.
+This is now fixed, the issue came from a project using preview-features in an older version than the one running jdtls.
+~~For whatever reason, I don't get the errors I used to have at the beginning, like Symbol not found or that kind of stuff.
 I need to investigate this issue as I tend to.
 Current status: They work for java 8 projects but not for Java 17. the jdtls logs shows that it doesn't find any errors in the file.
-It would seems more like there is some parsing issue going on. Probably better to open an issue ticket on the jdtls repository as the neovim setup seems properly done.
+It would seems more like there is some parsing issue going on. Probably better to open an issue ticket on the jdtls repository as the neovim setup seems properly done.~~
 
 ## Organize imports
 It used to be a big issue, but actually, I can say to jdt.ls what imports to use for instance, use assertj for assertThat, or use junit5 and not junit4.
-I'll have a lot to setup so that it doesn't screw up but that seems to be the path
+I'll have a lot to setup so that it doesn't screw up but that seems to be the path.
 
 ## Rearrange files
 That's a topic that I still need to get my hands on.
