@@ -76,3 +76,6 @@
 [submodule "pack/utils/start/kanso.nvim"]
 	path = pack/utils/start/kanso.nvim
 	url = https://github.com/webhooked/kanso.nvim
+[submodule "pack/utils/start/nvim-lspconfig"]
+	path = pack/utils/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
