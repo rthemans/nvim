@@ -5,28 +5,45 @@ local workspace_dir = home_dir .. 'projects/' .. project_name
 
 -- find jdtls home
 local jdtls_home = os.getenv("JDTLS_HOME")
-if (jdtls_home == nil || jdtls_home == '') then
-local vscode_dir = home_dir .. '.vscode-server/extensions/'
-local home_handle = io.popen("find " .. vscode_dir .. " -type d -name 'redhat.java-*' -printf '%f\\n' | sort -r ")
-jdtls_home = vscode_dir .. home_handle:read("*l") .."/"
-home_handle:close()
+if (jdtls_home == nil or jdtls_home == '') then
+    local vscode_dir = home_dir .. '.vscode-server/extensions/'
+    local home_handle = io.popen("find " .. vscode_dir .. " -type d -name 'redhat.java-*' -printf '%f\\n' | sort -r ")
+    local result = home_handle:read("*l")
+    if (result ~= nil) then
+        jdtls_home = vscode_dir .. home_handle:read("*l") .."/"
+    end
+    home_handle:close()
+end
+
+if (jdtls_home == nil or jdtls_home == '') then
+    print("could not find jdtls home")
+    do return end
 end
 
 local handle = io.popen("find " .. jdtls_home .. " -type f -name 'org.eclipse.equinox.launcher_*.jar'")
 local jdtls_jar = handle:read("*l")
 handle:close()
 
-local config_handle = io.popen("find " .. jdtls_home .. " -type d -name 'config_linux'")
-local config_linux = config_handle:read("*l")
-config_handle:close()
+local config_linux = os.getenv("JDTLS_CONFIG_HOME")
+if (config_linux == nil or config_linux == '') then
+    local config_handle = io.popen("find " .. jdtls_home .. " -type d -name 'config_linux'")
+    config_linux = config_handle:read("*l")
+    config_handle:close()
+end
 
 local lombok_jar = os.getenv("LOMBOK_JAR")
-if (lombok_jar == nul || lombok_jar == '' ) then
+if (lombok_jar == nil or lombok_jar == '' ) then
 local lombok_handle = io.popen("find " .. jdtls_home .. " -type f -name 'lombok*.jar'")
 lombok_jar = lombok_handle:read("*l")
 lombok_handle:close()
 end
 
+local java_home = os.getenv("JAVA_HOME_23")
+if (java_home == nil or java_home == '') then
+    java_home = os.getenv("JAVA_HOME")
+end
+
+local java = java_home .. 'bin/java'
 -- vim.lsp.log.set_level(vim.log.levels.TRACE)
 
 local capabilities = {
@@ -51,7 +68,7 @@ jdtls_config = {
         }, bufnr)
     end,
 	cmd = {
-		'java',
+		java,
 		'-Declipse.application=org.eclipse.jdt.ls.core.id1',
 		'-Dosgi.bundles.defaultStartLevel=4',
 		'-Declipse.product=org.eclipse.jdt.ls.core.product',

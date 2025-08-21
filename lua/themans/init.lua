@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 
+require("themans.lsp.config")
 require("themans.remap")
 require("themans.telescope")
 require("themans.treesitter")
