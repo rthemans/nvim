@@ -3,21 +3,29 @@ local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
 local home_dir = vim.env.HOME .. '/'
 local workspace_dir = home_dir .. 'projects/' .. project_name
 
+-- find jdtls home
+local jdtls_home = os.getenv("JDTLS_HOME")
+if (jdtls_home == nil || jdtls_home == '') then
 local vscode_dir = home_dir .. '.vscode-server/extensions/'
-
 local home_handle = io.popen("find " .. vscode_dir .. " -type d -name 'redhat.java-*' -printf '%f\\n' | sort -r ")
-local jdtls_home = vscode_dir .. home_handle:read("*l") .."/"
+jdtls_home = vscode_dir .. home_handle:read("*l") .."/"
 home_handle:close()
+end
 
 local handle = io.popen("find " .. jdtls_home .. " -type f -name 'org.eclipse.equinox.launcher_*.jar'")
 local jdtls_jar = handle:read("*l")
 handle:close()
 
-local lombok_handle = io.popen("find " .. jdtls_home .. " -type f -name 'lombok*.jar'")
-local lombok_jar = lombok_handle:read("*l")
-lombok_handle:close()
+local config_handle = io.popen("find " .. jdtls_home .. " -type d -name 'config_linux'")
+local config_linux = config_handle:read("*l")
+config_handle:close()
 
-local java =  "/usr/lib/jvm/java-23/bin/java"
+local lombok_jar = os.getenv("LOMBOK_JAR")
+if (lombok_jar == nul || lombok_jar == '' ) then
+local lombok_handle = io.popen("find " .. jdtls_home .. " -type f -name 'lombok*.jar'")
+lombok_jar = lombok_handle:read("*l")
+lombok_handle:close()
+end
 
 -- vim.lsp.log.set_level(vim.log.levels.TRACE)
 
@@ -43,7 +51,7 @@ jdtls_config = {
         }, bufnr)
     end,
 	cmd = {
-		java,
+		'java',
 		'-Declipse.application=org.eclipse.jdt.ls.core.id1',
 		'-Dosgi.bundles.defaultStartLevel=4',
 		'-Declipse.product=org.eclipse.jdt.ls.core.product',
@@ -55,11 +63,11 @@ jdtls_config = {
 		'--add-opens', 'java.base/java.lang=ALL-UNNAMED',
         '-javaagent:' .. lombok_jar,
 		'-jar', jdtls_jar, 
-		'-configuration', jdtls_home .. 'server/config_linux',
+		'-configuration', config_linux,
 		'-data', workspace_dir,
 	},
 
-	root_dir = vim.fs.dirname(vim.fs.find({'Jenkinsfile', '.git', '.gitignore', '.envrc'}, { upward = true })[1]),
+	root_dir = vim.fs.dirname(vim.fs.find({'.git', '.gitignore', '.envrc'}, { upward = true })[1]),
 
 	capabilities = capabilities,
 
