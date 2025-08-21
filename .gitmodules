@@ -79,3 +79,6 @@
 [submodule "pack/utils/start/nvim-lspconfig"]
 	path = pack/utils/start/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
+[submodule "pack/utils/start/lsp_signature.nvim"]
+	path = pack/utils/start/lsp_signature.nvim
+	url = https://github.com/ray-x/lsp_signature.nvim
