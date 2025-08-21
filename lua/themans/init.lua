@@ -20,7 +20,7 @@ require("themans.theme")
 require("themans.tokyonight")
 require("themans.nightfox")
 
-vim.cmd.colorscheme "kanso-pearl"
+vim.cmd.colorscheme "kanso-ink"
 
 local o = vim.o
 
