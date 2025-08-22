@@ -85,3 +85,18 @@
 [submodule "pack/utils/start/render-markdown.nvim"]
 	path = pack/utils/start/render-markdown.nvim
 	url = git@github.com:MeanderingProgrammer/render-markdown.nvim.git
+[submodule "javascript"]
+	path = parsers/javascript
+	url = git@github.com:tree-sitter/tree-sitter-javascript.git
+[submodule "parsers/java"]
+	path = parsers/java
+	url = git@github.com:tree-sitter/tree-sitter-java.git
+[submodule "parsers/query"]
+	path = parsers/query
+	url = git@github.com:tree-sitter-grammars/tree-sitter-query.git
+[submodule "parsers/html"]
+	path = parsers/html
+	url = git@github.com:tree-sitter/tree-sitter-html.git
+[submodule "parsers/css"]
+	path = parsers/css
+	url = git@github.com:tree-sitter/tree-sitter-css.git
