@@ -82,3 +82,6 @@
 [submodule "pack/utils/start/lsp_signature.nvim"]
 	path = pack/utils/start/lsp_signature.nvim
 	url = https://github.com/ray-x/lsp_signature.nvim
+[submodule "pack/utils/start/render-markdown.nvim"]
+	path = pack/utils/start/render-markdown.nvim
+	url = git@github.com:MeanderingProgrammer/render-markdown.nvim.git
