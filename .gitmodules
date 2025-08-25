@@ -42,7 +42,7 @@
 	url = https://github.com/stevearc/oil.nvim
 [submodule "pack/utils/start/nvim-colorizer.lua"]
 	path = pack/utils/start/nvim-colorizer.lua
-	url = https://github.com/norcalli/nvim-colorizer.lua
+	url = https://github.com/NiklasV1/nvim-colorizer.lua.git
 [submodule "pack/utils/start/nvim-ufo"]
 	path = pack/utils/start/nvim-ufo
 	url = https://github.com/kevinhwang91/nvim-ufo
