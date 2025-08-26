@@ -96,12 +96,12 @@ jdtls_config = {
                 runtimes = {
                     {
                         name = "JavaSE-17",
-                        path = "/usr/lib/jvm/java-17",
+                        path = os.getenv("JAVA_HOME_17"),
                         default = true
                     },
                     {
-                        name = "JavaSE-1.8",
-                        path = "/usr/lib/jvm/java-1.8.0"
+                        name = "JavaSE-23",
+                        path = os.getenv("JAVA_HOME_23")
                     }
                 }
             },
