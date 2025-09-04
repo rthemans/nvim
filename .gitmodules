@@ -100,3 +100,6 @@
 [submodule "parsers/css"]
 	path = parsers/css
 	url = git@github.com:tree-sitter/tree-sitter-css.git
+[submodule "pack/utils/start/which-key.nvim"]
+	path = pack/utils/start/which-key.nvim
+	url = git@github.com:folke/which-key.nvim.git
