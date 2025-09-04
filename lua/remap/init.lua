@@ -22,7 +22,7 @@ map("n", "<leader>em", jdtls.extract_method, bufopts, "extract method")
 map("v", "<leader>em", "[[<Esc><Cmd>lua require('jdtls').extract_method(true)<CR>]]", bufopts, "extract method")
 
 -- builtin lsp mappings
-map("n", "<leader>c", vim.lsp.buf.code_action, bufopts)
+map("n", "<leader>a", vim.lsp.buf.code_action, bufopts)
 map("n", "<leader>r", vim.lsp.buf.rename, bufopts)
 map("n", "<leader>=", vim.lsp.buf.format, bufopts)
 map("n", "<leader>jd", vim.lsp.buf.hover, bufopts)

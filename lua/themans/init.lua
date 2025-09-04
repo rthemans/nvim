@@ -1,7 +1,5 @@
 vim.g.mapleader = " "
 
-require("themans.lsp.config")
-require("themans.remap")
 require("themans.telescope")
 require("themans.treesitter")
 require("themans.blink")
@@ -16,12 +14,6 @@ require("themans.header")
 
 require("hardtime").setup()
 
--- themes
-require("themans.theme")
-require("themans.tokyonight")
-require("themans.nightfox")
-
-vim.cmd.colorscheme "kanso-ink"
 
 local o = vim.o
 
