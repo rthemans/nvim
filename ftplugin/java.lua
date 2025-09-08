@@ -13,7 +13,6 @@ augroup("mygroup", { clear = true })
 autocmd("BufWritePre", {
     pattern = "*",
     callback = function()
-        print("header from java")
         local header = require("header")
         if header and header.update_date_modified then
             header.update_date_modified()
