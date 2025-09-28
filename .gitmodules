@@ -103,3 +103,12 @@
 [submodule "pack/utils/start/which-key.nvim"]
 	path = pack/utils/start/which-key.nvim
 	url = git@github.com:folke/which-key.nvim.git
+[submodule "pack/utils/start/guard.nvim"]
+	path = pack/utils/start/guard.nvim
+	url = git@github.com:nvimdev/guard.nvim.git
+[submodule "pack/utils/start/guard-collection"]
+	path = pack/utils/start/guard-collection
+	url = git@github.com:nvimdev/guard-collection.git
+[submodule "pack/utils/start/conform.nvim"]
+	path = pack/utils/start/conform.nvim
+	url = git@github.com:stevearc/conform.nvim.git
