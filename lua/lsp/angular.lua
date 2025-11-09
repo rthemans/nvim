@@ -18,7 +18,7 @@ local function organize_imports()
   vim.lsp.buf.execute_command(params)
 end
 
-require("lspconfig").ts_ls.setup {
+vim.lsp.config("ts_ls", {
   on_attach = lsp_on_attach,
   capabilities = require("blink.cmp").get_lsp_capabilities(), 
   commands = {
@@ -27,7 +27,7 @@ require("lspconfig").ts_ls.setup {
       description = "Organize Imports"
     }
   }
-}
+})
 
 
 vim.lsp.enable('angularls')
