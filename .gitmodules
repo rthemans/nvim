@@ -115,3 +115,6 @@
 [submodule "packs/utils/start/barbar.nvim"]
 	path = packs/utils/start/barbar.nvim
 	url = git@github.com:romgrk/barbar.nvim.git
+[submodule "pack/utils/start/blink.lib"]
+	path = pack/utils/start/blink.lib
+	url = git@github.com:saghen/blink.lib.git
