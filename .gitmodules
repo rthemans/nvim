@@ -118,3 +118,6 @@
 [submodule "pack/utils/start/blink.lib"]
 	path = pack/utils/start/blink.lib
 	url = git@github.com:saghen/blink.lib.git
+[submodule "pack/utils/start/nvim-web-devicons"]
+	path = pack/utils/start/nvim-web-devicons
+	url = git@github.com:nvim-tree/nvim-web-devicons.git
