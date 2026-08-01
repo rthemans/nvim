@@ -42,7 +42,7 @@
 	url = https://github.com/stevearc/oil.nvim
 [submodule "pack/utils/start/nvim-colorizer.lua"]
 	path = pack/utils/start/nvim-colorizer.lua
-	url = https://github.com/NiklasV1/nvim-colorizer.lua.git
+	url = https://github.com/catgoose/nvim-colorizer.lua.git
 [submodule "pack/utils/start/nvim-ufo"]
 	path = pack/utils/start/nvim-ufo
 	url = https://github.com/kevinhwang91/nvim-ufo
@@ -84,43 +84,43 @@
 	url = https://github.com/ray-x/lsp_signature.nvim
 [submodule "pack/utils/start/render-markdown.nvim"]
 	path = pack/utils/start/render-markdown.nvim
-	url = git@github.com:MeanderingProgrammer/render-markdown.nvim.git
+	url = https://github.com/MeanderingProgrammer/render-markdown.nvim.git
 [submodule "javascript"]
 	path = parsers/javascript
-	url = git@github.com:tree-sitter/tree-sitter-javascript.git
+	url = https://github.com/tree-sitter/tree-sitter-javascript.git
 [submodule "parsers/java"]
 	path = parsers/java
-	url = git@github.com:tree-sitter/tree-sitter-java.git
+	url = https://github.com/tree-sitter/tree-sitter-java.git
 [submodule "parsers/query"]
 	path = parsers/query
-	url = git@github.com:tree-sitter-grammars/tree-sitter-query.git
+	url = https://github.com/tree-sitter-grammars/tree-sitter-query.git
 [submodule "parsers/html"]
 	path = parsers/html
-	url = git@github.com:tree-sitter/tree-sitter-html.git
+	url = https://github.com/tree-sitter/tree-sitter-html.git
 [submodule "parsers/css"]
 	path = parsers/css
-	url = git@github.com:tree-sitter/tree-sitter-css.git
+	url = https://github.com/tree-sitter/tree-sitter-css.git
 [submodule "pack/utils/start/which-key.nvim"]
 	path = pack/utils/start/which-key.nvim
-	url = git@github.com:folke/which-key.nvim.git
+	url = https://github.com/folke/which-key.nvim.git
 [submodule "pack/utils/start/guard.nvim"]
 	path = pack/utils/start/guard.nvim
-	url = git@github.com:nvimdev/guard.nvim.git
+	url = https://github.com/nvimdev/guard.nvim.git
 [submodule "pack/utils/start/guard-collection"]
 	path = pack/utils/start/guard-collection
-	url = git@github.com:nvimdev/guard-collection.git
+	url = https://github.com/nvimdev/guard-collection.git
 [submodule "pack/utils/start/conform.nvim"]
 	path = pack/utils/start/conform.nvim
-	url = git@github.com:stevearc/conform.nvim.git
+	url = https://github.com/stevearc/conform.nvim.git
 [submodule "packs/utils/start/barbar.nvim"]
 	path = pack/utils/start/barbar.nvim
-	url = git@github.com:romgrk/barbar.nvim.git
+	url = https://github.com/romgrk/barbar.nvim.git
 [submodule "pack/utils/start/blink.lib"]
 	path = pack/utils/start/blink.lib
-	url = git@github.com:saghen/blink.lib.git
+	url = https://github.com/saghen/blink.lib.git
 [submodule "pack/utils/start/nvim-web-devicons"]
 	path = pack/utils/start/nvim-web-devicons
-	url = git@github.com:nvim-tree/nvim-web-devicons.git
+	url = https://github.com/nvim-tree/nvim-web-devicons.git
 [submodule "pack/utils/start/gitsigns.nvim"]
 	path = pack/utils/start/gitsigns.nvim
-	url = git@github.com:lewis6991/gitsigns.nvim.git
+	url = https://github.com/lewis6991/gitsigns.nvim.git
