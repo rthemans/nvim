@@ -121,3 +121,6 @@
 [submodule "pack/utils/start/nvim-web-devicons"]
 	path = pack/utils/start/nvim-web-devicons
 	url = git@github.com:nvim-tree/nvim-web-devicons.git
+[submodule "pack/utils/start/gitsigns.nvim"]
+	path = pack/utils/start/gitsigns.nvim
+	url = git@github.com:lewis6991/gitsigns.nvim.git
