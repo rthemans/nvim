@@ -1,11 +1,11 @@
 require("header").setup({
     file_name = false,
-    author = nil,
+    author = "Raphaël Thémans",
     project = nil,
     date_created = false,
     date_modified = false,
     line_separator = "",
-    copyright_text = "Copyright 2025 Buy Way Personal Finance",
+    copyright_text = "Copyright 2026 Airthems SRL",
     license_from_file = false,
 })
 local augroup = vim.api.nvim_create_augroup

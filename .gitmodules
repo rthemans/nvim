@@ -22,9 +22,6 @@
 [submodule "pack/utils/start/nvim-treesitter-textobjects"]
 	path = pack/utils/start/nvim-treesitter-textobjects
 	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
-[submodule "pack/utils/start/nvim-treesitter-refactor"]
-	path = pack/utils/start/nvim-treesitter-refactor
-	url = https://github.com/nvim-treesitter/nvim-treesitter-refactor
 [submodule "pack/utils/start/blink.nvim"]
 	path = pack/utils/start/blink.nvim
 	url = https://github.com/Saghen/blink.nvim

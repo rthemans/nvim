@@ -13,4 +13,4 @@ require("themans.header")
 
 require("hardtime").setup()
 
-
+require("themans.tabline")
