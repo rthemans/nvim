@@ -112,9 +112,6 @@
 [submodule "pack/utils/start/conform.nvim"]
 	path = pack/utils/start/conform.nvim
 	url = https://github.com/stevearc/conform.nvim.git
-[submodule "packs/utils/start/barbar.nvim"]
-	path = pack/utils/start/barbar.nvim
-	url = https://github.com/romgrk/barbar.nvim.git
 [submodule "pack/utils/start/blink.lib"]
 	path = pack/utils/start/blink.lib
 	url = https://github.com/saghen/blink.lib.git
