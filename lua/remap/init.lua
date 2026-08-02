@@ -94,3 +94,6 @@ map("i", '""', '""<left>', { desc = "Enter into double quotes" })
 map("i", "''", "''<left>", { desc = "Enter into single quotes" })
 map("i", "``", "``<left>", { desc = "Enter into backticks" })
 
+-- exit terminal with Ctrl+q
+map("t", "<C-q>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
+
