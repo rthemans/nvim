@@ -1,17 +1,19 @@
--- Fonction commune à tous les serveurs LSP
-lsp_on_attach = function(client, bufnr)
-  local opts = { noremap=true, silent=true, buffer=bufnr }
+-- Filetypes handled by conform — LSP formatting is skipped for these
+local CONFORM_FILETYPES = { "javascript", "javascriptreact", "typescript", "typescriptreact", "html", "css", "json" }
 
-  -- Formattage si le serveur le supporte
-  if client.server_capabilities.documentFormattingProvider then
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      buffer = bufnr,
-      callback = function() vim.lsp.buf.format({ bufnr = bufnr }) end,
-    })
-  end
+-- Fonction commune à tous les serveurs LSP
+LSP_ON_ATTACH = function(client, bufnr)
+    local ft = vim.bo[bufnr].filetype
+    if client.server_capabilities.documentFormattingProvider and
+        not vim.tbl_contains(CONFORM_FILETYPES, ft) then
+        vim.api.nvim_create_autocmd("BufWritePre", {
+            buffer = bufnr,
+            callback = function() vim.lsp.buf.format({ bufnr = bufnr }) end,
+        })
+    end
 end
 
-lsp_capabilities = require('blink.cmp').get_lsp_capabilities()
+LSP_CAPABILITIES = require('blink.cmp').get_lsp_capabilities()
 
 vim.diagnostic.config({
     signs = {
@@ -33,15 +35,14 @@ vim.diagnostic.config({
         },
     },
 })
--- Mise à jour des diagnostics en temps réel
 vim.o.updatetime = 500
 vim.api.nvim_create_autocmd("CursorHold", {
     callback = function()
-        vim.diagnostic.open_float(nil, { focusable = false, close_events = {"CursorMoved", "CursorMovedI", "BufHidden", "InsertCharPre", "WinLeave"} })
+        vim.diagnostic.open_float(nil,
+            { focusable = false, close_events = { "CursorMoved", "CursorMovedI", "BufHidden", "InsertCharPre", "WinLeave" } })
     end,
 })
 
--- Auto reload quand angular.json ou tsconfig.json change
 vim.api.nvim_create_autocmd("BufWritePost", {
     pattern = { "angular.json", "tsconfig.json" },
     callback = function()
@@ -53,3 +54,4 @@ require("lsp.java")
 require("lsp.angular")
 require("lsp.conform")
 require("lsp.lint")
+require("lsp.lua")
