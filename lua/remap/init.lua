@@ -30,10 +30,6 @@ map("n", "<leader>jd", vim.lsp.buf.hover, bufopts)
 -- oil mappings
 map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
--- nvim tree
-local nvimTree = require("nvim-tree.api")
-map("n", "<leader>tt", function()nvimTree.tree.toggle({ find_file = true}) end, bufopts, "nvim tree: toggle tree")
-
 -- spider
 map({ "n", "o", "x" }, "w", "<cmd>lua require('spider').motion('w')<CR>")
 map({ "n", "o", "x" }, "e", "<cmd>lua require('spider').motion('e')<CR>")

@@ -1,3 +1,4 @@
+require("pack")
 require("themans")
 require("lsp")
 require("theme")
