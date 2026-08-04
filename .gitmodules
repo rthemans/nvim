@@ -1,33 +1,3 @@
-[submodule "pack/utils/start/telescope.nvim"]
-	path = pack/utils/start/telescope.nvim
-	url = https://github.com/nvim-telescope/telescope.nvim
-[submodule "pack/utils/start/nvim-jdtls"]
-	path = pack/utils/start/nvim-jdtls
-	url = https://github.com/mfussenegger/nvim-jdtls
-[submodule "pack/utils/start/nvim-tree.lua"]
-	path = pack/utils/start/nvim-tree.lua
-	url = https://github.com/nvim-tree/nvim-tree.lua
-[submodule "pack/utils/start/plenary.nvim"]
-	path = pack/utils/start/plenary.nvim
-	url = https://github.com/nvim-lua/plenary.nvim
-[submodule "pack/utils/start/telescope-ui-select.nvim"]
-	path = pack/utils/start/telescope-ui-select.nvim
-	url = https://github.com/nvim-telescope/telescope-ui-select.nvim
-[submodule "pack/utils/start/nvim-treesitter"]
-	path = pack/utils/start/nvim-treesitter
-	url = https://github.com/nvim-treesitter/nvim-treesitter
-[submodule "pack/utils/start/nvim-treesitter-context"]
-	path = pack/utils/start/nvim-treesitter-context
-	url = https://github.com/nvim-treesitter/nvim-treesitter-context
-[submodule "pack/utils/start/nvim-treesitter-textobjects"]
-	path = pack/utils/start/nvim-treesitter-textobjects
-	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
-[submodule "pack/utils/start/blink.nvim"]
-	path = pack/utils/start/blink.nvim
-	url = https://github.com/Saghen/blink.nvim
-[submodule "pack/utils/start/blink.cmp"]
-	path = pack/utils/start/blink.cmp
-	url = https://github.com/Saghen/blink.cmp
 [submodule "pack/utils/start/colorful-menu.nvim"]
 	path = pack/utils/start/colorful-menu.nvim
 	url = https://github.com/xzbdmw/colorful-menu.nvim
@@ -58,9 +28,6 @@
 [submodule "pack/utils/start/hardtime.nvim"]
 	path = pack/utils/start/hardtime.nvim
 	url = https://github.com/m4xshen/hardtime.nvim
-[submodule "pack/utils/start/nvim"]
-	path = pack/utils/start/nvim
-	url = https://github.com/catppuccin/nvim
 [submodule "pack/utils/start/tokyonight.nvim"]
 	path = pack/utils/start/tokyonight.nvim
 	url = https://github.com/folke/tokyonight.nvim
@@ -109,9 +76,6 @@
 [submodule "pack/utils/start/conform.nvim"]
 	path = pack/utils/start/conform.nvim
 	url = https://github.com/stevearc/conform.nvim.git
-[submodule "pack/utils/start/blink.lib"]
-	path = pack/utils/start/blink.lib
-	url = https://github.com/saghen/blink.lib.git
 [submodule "pack/utils/start/nvim-web-devicons"]
 	path = pack/utils/start/nvim-web-devicons
 	url = https://github.com/nvim-tree/nvim-web-devicons.git

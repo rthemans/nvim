@@ -1,4 +1,5 @@
 vim.opt.packpath:append(vim.fn.expand("~/.config/nvim/pack"))
+require("pack")
 require("themans")
 require("lsp")
 require("theme")
