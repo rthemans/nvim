@@ -78,44 +78,6 @@ require'nvim-treesitter.configs'.setup {
      },
 }
 
-local home = os.getenv("HOME")
-local parser_config = require "nvim-treesitter.parsers".get_parser_configs();
-parser_config.java = {
-    install_info = { 
-        url = home .. "/.config/nvim/parsers/java/",
-        files = { "src/parser.c" },
-    },
-    filetype = "java",
-};
-parser_config.html = {
-    install_info = {
-        url = home .. "/.config/nvim/parsers/html/",
-        files = { "src/parser.c", "src/scanner.c" },
-    },
-    filetype = "html",
-}
-parser_config.css = {
-    install_info = {
-        url = home .. "/.config/nvim/parsers/css/",
-        files = { "src/parser.c", "src/scanner.c" },
-    },
-    filetype = "css",
-}
-parser_config.query = {
-    install_info = {
-        url = home .. "/.config/nvim/parsers/query/",
-        files = { "src/parser.c" },
-    },
-    filetype = "query",
-}
-
-parser_config.javascript = {
-    install_info = {
-        url = home .. "/.config/nvim/parsers/javascript/",
-        files = { "src/parser.c", "src/scanner.c" },
-    },
-    filetype = "javascript",
-}
 require("treesitter-context").setup({
 })
 
