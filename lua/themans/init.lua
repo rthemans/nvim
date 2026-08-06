@@ -5,11 +5,10 @@ require("themans.treesitter")
 require("themans.blink")
 require("themans.oil")
 require("themans.colorizer")
-require("themans.ufo")
 require("themans.colorful")
 require("themans.dashboard")
 require("themans.header")
 
-require("hardtime").setup()
-
 require("themans.tabline")
+
+require("hardtime").setup()

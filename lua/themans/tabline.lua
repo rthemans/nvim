@@ -114,21 +114,23 @@ vim.api.nvim_create_autocmd("User", {
 function M.render()
     local s = ""
     local total = vim.fn.tabpagenr("$")
+    local current_index = 1;
 
     for i = 1, total do
         local is_current = i == vim.fn.tabpagenr()
+        current_index = is_current and i or current_index
         s = s .. (is_current and "%#TabLineSel#" or "%#TabLine#")
         s = s .. "%" .. i .. "T" -- clickable zone start, tabnr i
         s = s .. tab_label(i, is_current)
     end
 
-    s = s .. "%#TabLineFill#%T" -- fin de la zone clickable
+    s = s .. "%#TabLineFill#%T " .. current_index .. "/" .. total
     return s
 end
 
 _G.tabline_render = M.render
 
 vim.o.tabline = "%!v:lua.tabline_render()"
-vim.o.showtabline = 2 -- toujours afficher la tabline
+vim.o.showtabline = 1
 
 return M

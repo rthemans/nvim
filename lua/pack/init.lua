@@ -1,6 +1,6 @@
 --[[
 -- Author: Raphaël Thémans
--- 
+--
 -- Copyright 2026 Airthems SRL
 --]]
 
@@ -33,7 +33,7 @@ vim.pack.add({
     {
         src = "https://github.com/nvim-treesitter/nvim-treesitter",
         name = "nvim-treesitter",
-        version = "master"
+        version = "main"
     },
     {
         src = "https://github.com/nvim-treesitter/nvim-treesitter-context",
@@ -43,7 +43,7 @@ vim.pack.add({
     {
         src = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects",
         name = "nvim-treesitter-textobjects",
-        version = "master"
+        version = "main"
     },
     {
         src = "https://github.com/saghen/blink.cmp",
@@ -74,11 +74,6 @@ vim.pack.add({
         src = "https://github.com/catgoose/nvim-colorizer.lua",
         name = "colorizer",
         version = "master"
-    },
-    {
-        src = "https://github.com/kevinhwang91/nvim-ufo",
-        name = "ufo",
-        version = "v1.5.0"
     },
     {
         src = "https://github.com/kevinhwang91/promise-async",
@@ -165,5 +160,9 @@ vim.pack.add({
         name = "gitsigns",
         version = "v2.1.0"
     },
+    {
+        src = "https://github.com/sphamba/smear-cursor.nvim.git",
+        name = "smear",
+        version = vim.version.range("^0.6")
+    }
 })
-
