@@ -52,3 +52,11 @@ map("i", "``", "``<left>", { desc = "Enter into backticks" })
 -- exit terminal with Ctrl+q
 map("t", "<C-q>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
+map("n", "<leader>bc", function()
+    vim.cmd [[
+      highlight Normal guibg=none
+      highlight NonText guibg=none
+      highlight Normal ctermbg=none
+      highlight NonText ctermbg=none
+    ]]
+end, { desc = "Make background transparent" })
