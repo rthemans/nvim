@@ -104,3 +104,9 @@ map("n", "<leader>li", builtin.lsp_implementations, { desc = "Telescope find imp
 map("n", "<leader>lc", builtin.lsp_incoming_calls, { desc = "Telescope find incoming calls" })
 map("n", "<leader>lo", builtin.lsp_outgoing_calls, { desc = "Telescope find outgoing calls" })
 map("n", "<leader>ld", builtin.lsp_definitions, { desc = "Telescope find definitions" })
+
+-- Trivia
+map("n", "<leader>c", function()
+    builtin.colorscheme({ enable_preview = true, ignore_builtins = true })
+end
+, { desc = "Telescope display colorschemes" })
