@@ -52,9 +52,11 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 
 require("lsp.java")
 require("lsp.angular")
+require("lsp.tsls")
 require("lsp.conform")
 require("lsp.lint")
 require("lsp.lua")
 require("lsp.qml")
 
+vim.lsp.codelens.enable(true)
 vim.o.foldexpr = 'v:lua.vim.lsp.foldexpr()'

@@ -37,7 +37,7 @@ vim.pack.add({
     {
         src = "https://github.com/nvim-treesitter/nvim-treesitter-context",
         name = "nvim-treesitter-context",
-        version = "master"
+        version = "v1.0.0"
     },
     {
         src = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects",
@@ -163,5 +163,10 @@ vim.pack.add({
         src = "https://github.com/sphamba/smear-cursor.nvim.git",
         name = "smear",
         version = vim.version.range("^0.6")
+    },
+    {
+        src = "https://github.com/oribarilan/lensline.nvim.git",
+        name = "lensline",
+        version = vim.version.range("^2")
     }
 })

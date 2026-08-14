@@ -12,5 +12,6 @@ require("themans.header")
 require("themans.tabline")
 
 require("hardtime").setup()
+require("lensline").setup()
 
 vim.o.gp = "rg --vimgrep"

@@ -75,6 +75,11 @@
       "src": "https://github.com/webhooked/kanso.nvim",
       "version": "'main'"
     },
+    "lensline": {
+      "rev": "4fafcfaeedac2d20bd5902213393982c4218bc3a",
+      "src": "https://github.com/oribarilan/lensline.nvim.git",
+      "version": "2.0.0 - 3.0.0"
+    },
     "lsp signature": {
       "rev": "b7ace9ddb1640ce266012a45a672dfdaedfa5ec6",
       "src": "https://github.com/ray-x/lsp_signature.nvim",
@@ -108,7 +113,7 @@
     "nvim-treesitter-context": {
       "rev": "f3061339b8eaf9fda873600bc425b8d2d8502533",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-context",
-      "version": "'master'"
+      "version": "'v1.0.0'"
     },
     "nvim-treesitter-textobjects": {
       "rev": "5ca4aaa6efdcc59be46b95a3e876300cfead05ef",

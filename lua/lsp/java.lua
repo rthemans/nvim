@@ -92,7 +92,7 @@ local jdtls_config = {
         '-data', workspace_dir,
     },
 
-    root_dir = vim.fs.dirname(vim.fs.find({ '.git', '.gitignore', 'settings.gradle' }, { upward = true })[1]),
+    root_dir = vim.fs.dirname(vim.fs.find({ '.git', '.gitignore', 'settings.gradle', 'pom.xml' }, { upward = true })[1]),
 
     capabilities = capabilities,
 

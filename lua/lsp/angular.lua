@@ -10,26 +10,7 @@ vim.lsp.config('angularls', {
     capabilities = LSP_CAPABILITIES
 })
 
-local function organize_imports()
-    local params = {
-        command = "_typescript.organizeImports",
-        arguments = { vim.api.nvim_buf_get_name(0) },
-        title = ""
-    }
-    vim.lsp.buf.execute_command(params)
-end
 
-vim.lsp.config("ts_ls", {
-    on_attach = LSP_ON_ATTACH,
-    capabilities = LSP_CAPABILITIES,
-    commands = {
-        OrganizeImports = {
-            organize_imports,
-            description = "Organize Imports"
-        }
-    }
-})
 
 
 vim.lsp.enable('angularls')
-vim.lsp.enable('ts_ls')

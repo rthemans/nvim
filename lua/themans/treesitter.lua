@@ -79,4 +79,7 @@ require 'nvim-treesitter.configs'.setup {
 }
 
 require("treesitter-context").setup({
+    disable = function()
+        return vim.bo.filetype == 'markdown'
+    end,
 })
