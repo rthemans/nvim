@@ -55,5 +55,6 @@ require("lsp.angular")
 require("lsp.conform")
 require("lsp.lint")
 require("lsp.lua")
+require("lsp.qml")
 
 vim.o.foldexpr = 'v:lua.vim.lsp.foldexpr()'
